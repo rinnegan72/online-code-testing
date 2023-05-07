@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CodePilot Sign-in</title>
+    <link href="sign-in.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <link rel="stylesheet" href='bootstrap.min.css'>
+    <!--.dark is required for toggle mode -->  
+      <style>  
+     .dark
+      {
+	    background-color:black;
+	    color:white;
+      }
+    </style>
+  </head>
+  <body class="text-center">
+      <main class="form-signin m-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="72" fill="currentColor" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+        <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z"/>
+      </svg>
+      <h1 class="h3 mb-3 fw-normal">CMRIT's CodePilot</h1>
+        <button class="w-100 btn btn-lg btn-success" style="margin-top: 10px;" id="googleauth">Sign in with Google <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+          <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+        </svg></button>
+        <p><a href="#" id="mode_shift">Toggle mode</a></p>
+        <p id = "demo"></p>
+      <div>
+        <!-- Toggle Link -->
+        <p style="margin: 10px;">
+          <a href="#" id="toggle-link">Click here</a> to show/hide an overview about this application.
+        </p>
+      </main>
+          <!-- Explanatory Section -->
+          <section id="explanatory-section" style="margin: 20px; display: none;" width="80%">
+            <h3>About this Application</h3>
+            <p>
+              This application is a personal playground for experimenting with code. Here, you can flex your programming muscles by trying out different programs. Feel free to modify the code, test it out, and save your changes. Do not forget to give your program a unique name!
+            </p>
+            <h4>Features</h4>
+            <ul>
+              <li>Write and run code in four programming languages</li>
+              <li>Save your programs and access them later</li>
+            </ul>
+          </section>
+        </div>
+      <script src="bundle.js"></script>
+    <script>
+      loadIndex()
+    </script>
+</body>
+</html>

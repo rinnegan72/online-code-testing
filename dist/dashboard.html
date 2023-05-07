@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>CodePilot Dashboard</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/features/">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--This is required for toggle mode -->  
+    <style>  
+     .dark
+      {
+	    background-color:black;
+	    color:white;
+      }
+    </style>
+  </head>
+  <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>CodePilot Dashboard</title>
+   </svg>
+<main>
+      <!-- Header -->
+      <div class="d-flex justify-content-between">
+        <div style="align-self: flex-start;">
+          <a href="https://www.cmrit.ac.in/" target="_blank" title="CMRIT website">
+            <img src="https://image3.mouthshut.com/images/imagesp/925717948s.jpg" height="40" alt="logo" style=" margin-left: 10px;">
+          </a>
+        </div>
+        <div>
+          <p  id="element2" style="text-align: right; margin-right: 10px; margin-top: 5px; width:95% ">
+            <a href="https://www.cmrit.ac.in/" target="_blank">CMRIT</a>&nbsp &nbsp
+            <a href="mailto:vibp19cs@cmrit.ac.in, rsri19cs@cmrit.ac.in" class="icon-link d-inline-flex align-items-center">Contact us</a>&nbsp &nbsp
+            <a href="faqs.html" target="_blank">FAQs</a>&nbsp &nbsp
+            <a href="#" id="mode_shift">Toggle mode</a>&nbsp &nbsp
+            <a href="index.html">Logout</a>&nbsp &nbsp &nbsp &nbsp
+          </p>
+        </div>
+      </div>
+      <!-- Page Heading -->
+      <h2 class="pb-2 border-bottom" id="myHeading" style=" margin-left: 10px; width: 95%; text-align: center;"
+        title= "Welcome to your personal playground for experimenting with code! Here, you can flex your programming muscles by trying out different programs. Feel free to modify the code, test it out, and save your changes. Do not forget to give your program a unique name!">
+      </h2>
+  </div>
+  <!-- Toggle Link -->
+  <p style="margin: 10px;">
+    Want to know more about this application?
+    <a href="#" id="toggle-link">Click here</a> to show/hide an overview about this application.
+  </p>
+
+    <!-- Explanatory Section -->
+  <section id="explanatory-section" style="margin: 20px; display: none;">
+    <h3>About this Application</h3>
+    <p>
+      This application is a personal playground for experimenting with code. Here, you can flex your programming muscles by trying out different programs. Feel free to modify the code, test it out, and save your changes. Do not forget to give your program a unique name!
+    </p>
+    <h4>Features</h4>
+    <ul>
+      <li>Write and run code in four programming languages</li>
+      <li>Save your programs and access them later</li>
+    </ul>
+    You can refer to <a href="faqs.html" target="_blank">the FAQ page</a> for more details.
+  </section>
+</main>
+  <body>
+      <!--java-->
+      <div class="row" style="margin-left: 20px; margin-right: 20px;">
+        <div class="col-md-3" >  
+          <div >
+            <img alt="beach"src="https://www.kindpng.com/picc/m/198-1984828_java-icon-transparent-hd-png-download.png" height="80" >
+            <p>Java</p>
+            <ol id="java-program-list" style="margin-top: 0; padding-left: 0px;"></ol>
+          </div>
+        </div>
+        <!--python-->
+        <div class="col-md-3">
+        <div>
+          <figure><!--Csharp.html-->
+                <img id ="python"alt="beach"src="https://i0.wp.com/tinkercademy.com/wp-content/uploads/2018/04/python-icon.png?ssl=1" height="80">
+              <p>Python</p>
+              <ol id="python-program-list" style="margin-top: 0; padding-left: 0px;"></ol>
+            </div>
+        </div>
+        <!--Ruby-->
+        <div class="col-md-3">
+          <div >
+            <img  src="https://th.bing.com/th/id/OIP.-0TJbNTw4D2mg3pllOFADwHaHa?pid=ImgDet&rs=1" height="80">
+          <p>Ruby</p>
+          <ol id="ruby-program-list" style="margin-top: 0; padding-left: 0px;"></ol>
+        </div>
+        </div>
+        <!--C#-->
+        <div class="col-md-3">
+          <div >
+            <img  src="https://sdtimes.com/wp-content/uploads/2018/03/cpppp.png" height="80">
+          <p>C/C++</p>
+          <ol id="cpp-program-list" style="margin-top: 0; padding-left: 0px;"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="pb-2 border-top" style="margin-left: 20px;">
+      Implemented by CMRIT 2023 Students - Sriram and Vibhav
+    </div>
+    <script src="bundle.js"></script>
+    <script type="module">
+      loadDashboard()
+    </script>
+  </body>
+</html>
