@@ -27,4 +27,4 @@ you can try it out here if you have a cmrit.ac.in email id: https://mvp2-f8016.w
 
 
 Final Year Project made by R Sriram (1CR19CS127) and Vibhav P (1CR19CS181) of Team FS19.
-Under the guidance of Mr. Anil D assitant professor in CSE department of CMR Institute of Technoology.
+Under the guidance of Mr. Anil D assitant professor in CSE department of CMR Institute of Technology.
